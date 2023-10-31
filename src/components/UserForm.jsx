@@ -12,11 +12,13 @@ import Stack from 'react-bootstrap/Stack';
 const UserForm = (props) => {
 	const { handleSaveUser } = props;
 
-	const [formData, setFormData] = useState({
+	const user = {
 		firstName: '',
 		lastName: '',
 		age: '',
-	});
+	};
+
+	const [formData, setFormData] = useState(user);
 
 	const handleFormData = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -27,6 +29,8 @@ const UserForm = (props) => {
 		e.preventDefault();
 		// pass the user object as an argument back to parent component
 		handleSaveUser(formData);
+		// reset the entire form
+		setFormData(user);
 	};
 
 	return (
