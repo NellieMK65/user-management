@@ -8,11 +8,9 @@ function App() {
 		console.log(user);
 	};
 
-	const name = 'John Doe';
-
 	return (
 		<div className="container mt-5">
-			<UserForm handleSaveUser={handleSaveUser} name={name} />
+			<UserForm handleSaveUser={handleSaveUser} />
 		</div>
 	);
 }
