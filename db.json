@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "firstName": "Leo",
+      "lastName": "Messi",
+      "age": "32",
+      "id": 1
+    },
+    {
+      "firstName": "Leo",
+      "lastName": "Messi",
+      "age": "32",
+      "id": 2
+    },
+    {
+      "firstName": "Ronaldo",
+      "lastName": "Messi",
+      "age": "32",
+      "id": 3
+    }
+  ]
+}
